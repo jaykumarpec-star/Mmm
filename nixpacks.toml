@@ -1,0 +1,23 @@
+[phases.setup]
+nixPkgs = [
+  "glib",
+  "nss",
+  "atk",
+  "cups",
+  "dbus",
+  "drm",
+  "libxkbcommon",
+  "xorg.libX11",
+  "xorg.libXcomposite",
+  "xorg.libXdamage",
+  "xorg.libXext",
+  "xorg.libXfixes",
+  "xorg.libXrandr",
+  "mesa",
+  "pango",
+  "cairo",
+  "expat"
+]
+
+[phases.build]
+cmds = ["playwright install chromium"]
